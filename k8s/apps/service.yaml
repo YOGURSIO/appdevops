@@ -1,0 +1,29 @@
+# Services para Blue-Green Deployment
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-service
+  namespace: appdevops
+spec:
+  selector:
+    app: frontend
+    version: blue  # Inicialmente apunta a blue
+  ports:
+  - port: 80
+    targetPort: 80
+  type: NodePort
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+  namespace: appdevops
+spec:
+  selector:
+    app: backend
+    version: blue  # Inicialmente apunta a blue
+  ports:
+  - port: 5000
+    targetPort: 5000
+  type: NodePort
