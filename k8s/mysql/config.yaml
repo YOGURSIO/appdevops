@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-config
+  namespace: appdevops
+data:
+  MYSQL_DATABASE: "tienda_online"
+  MYSQL_USER: "tienda_user"

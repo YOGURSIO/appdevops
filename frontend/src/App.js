@@ -10,7 +10,7 @@ import ProductDetail from './components/ProductDetail';
 import Cart from './components/Cart';
 import Checkout from './components/Checkout';
 
-const API_URL = 'http://localhost:5001/api';
+const API_URL = '/api';
 
 function App() {
   const [productos, setProductos] = useState([]);
