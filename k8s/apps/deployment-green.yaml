@@ -48,6 +48,6 @@ spec:
     spec:
       containers:
       - name: backend
-        image: app-backend:v2
+        image: app-backend:green
         ports:
         - containerPort: 5000

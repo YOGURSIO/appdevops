@@ -4,7 +4,7 @@ import './Header.css';
 
 const Header = ({ cantidadCarrito }) => {
   // Versión hardcodeada que cambiaremos para cada build
-  const version = 'green';
+  const version = 'blue';
   
   return (
     <header className={`header ${version === 'green' ? 'version-green' : ''}`}>
